@@ -6,17 +6,17 @@ import Submits from '../pages/submits.vue';
 Vue.use(Router);
 
 export const router = new Router({
-    mode: 'history',
-    routes: [
-        {
-            path: '/',
-            name: 'Home',
-            component: Home,
-        },
-        {
-            path: '/submits',
-            name: 'Submits',
-            component: Submits,
-        },
-    ],
+  mode: 'history',
+  routes: [
+    {
+        path: '/',
+        name: 'Home',
+        component: Home,
+    },
+    {
+        path: '/submits',
+        name: 'Submits',
+        component: Submits,
+    },
+  ],
 });
