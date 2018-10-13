@@ -30,7 +30,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #fff;
-  height: 100%;
+  min-height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
