@@ -20,6 +20,7 @@ body {
 }
 body {
   background:linear-gradient(135deg, #CE9FFC 0%,#7367F0 100%);
+  background-attachment: fixed;
 }
 * {
   box-sizing: border-box;
