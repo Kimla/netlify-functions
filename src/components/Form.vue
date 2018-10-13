@@ -95,7 +95,7 @@ export default {
         name: this.name,
         contact: this.contact,
         message: this.message,
-      }).then(res => {
+      }).then(() => {
         this.step++;
       });
     }
@@ -104,12 +104,6 @@ export default {
 </script>
 
 <style scoped>
-.form {
-  width: 700px;
-  margin: 0 auto;
-  max-width: 100%;
-  margin-bottom: 15vh;
-}
 .input {
   width: 100%;
   padding: 15px;

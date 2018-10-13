@@ -1,17 +1,14 @@
 <template>
   <div id="app">
-    <Form/>
+    <div class="appInner">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
 <script>
-import Form from './components/Form.vue'
-
 export default {
   name: 'app',
-  components: {
-    Form
-  }
 }
 </script>
 
@@ -43,5 +40,11 @@ body {
 }
 h1 {
   font-size: 50px;
+}
+.appInner {
+  width: 700px;
+  margin: 0 auto;
+  max-width: 100%;
+  margin-bottom: 15vh;
 }
 </style>
