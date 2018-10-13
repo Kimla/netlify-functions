@@ -2,3 +2,10 @@
   Command = "npm run build && npm run build:lambda"
   Functions = "lambda"
   Publish = "dist"
+
+# The following redirect is intended for use with most SPAs that handle
+# routing internally.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
