@@ -1,5 +1,5 @@
 <template>
-  <div class="page">
+  <div v-if="loaded" class="page">
     <div class="inner">
       <div class="container">
         <h1>{{ heading }}</h1>
@@ -37,6 +37,7 @@ export default {
     VueTrix,
   },
   data: () => ({
+    loaded: false,
     heading: '',
     preamble: '',
     text: '',
@@ -55,6 +56,7 @@ export default {
       this.heading = res.data.heading;
       this.preamble = res.data.preamble;
       this.text = res.data.text;
+      this.loaded = true;
     },
     save() {
       axios.post('.netlify/functions/page', {
