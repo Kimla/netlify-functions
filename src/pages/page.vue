@@ -6,7 +6,7 @@
         <p class="preamble">{{ preamble }}</p>
         <hr>
         <div class="content">
-          <p>{{ text }}</p>
+          <p v-html="text"></p>
         </div>
       </div>
     </div>
@@ -21,8 +21,7 @@
         <textarea id="preamble" name="preamble" v-model="preamble"></textarea>
       </div>
       <div class="formRow">
-        <label for="text">Text</label>
-        <textarea id="text" name="text" v-model="text"></textarea>
+        <VueTrix v-model="text"/>
       </div>
       <button class="button" @click="save">Save</button>
     </div>
@@ -31,8 +30,12 @@
 
 <script>
 import axios from 'axios';
+import VueTrix from 'vue-trix';
 
 export default {
+  components: {
+    VueTrix,
+  },
   data: () => ({
     heading: '',
     preamble: '',
@@ -66,10 +69,17 @@ export default {
 };
 </script>
 
+<style>
+.trix-content {
+  height: 250px;
+}
+</style>
+
 <style scoped>
 .sidebar {
   padding: 15px 30px;
   text-align: left;
+  overflow: hidden;
 }
 .sidebar h2 {
   text-align: center;
@@ -130,7 +140,7 @@ hr {
   width: 100%;
 }
 .sidebar {
-  width: 500px;
+  width: 600px;
   height: 100vh;
   background: #fff;
   color: #333;
