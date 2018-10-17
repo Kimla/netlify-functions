@@ -1,8 +1,6 @@
 <template>
   <div id="app">
-    <div class="appInner">
-      <router-view></router-view>
-    </div>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -37,15 +35,8 @@ body {
   justify-content: center;
   font-size: 18px;
   width: 100%;
-  padding: 15px;
 }
 h1 {
   font-size: 50px;
-}
-.appInner {
-  width: 700px;
-  margin: 0 auto;
-  max-width: 100%;
-  margin-bottom: 15vh;
 }
 </style>

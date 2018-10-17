@@ -1,5 +1,5 @@
 <template>
-  <div class="form">
+  <div class="form wrapper">
 
     <div
       v-if="step === 1"
@@ -104,6 +104,13 @@ export default {
 </script>
 
 <style scoped>
+.wrapper {
+  width: 700px;
+  margin: 0 auto;
+  max-width: 100%;
+  margin-bottom: 15vh;
+  padding: 15px;
+}
 .input {
   width: 100%;
   padding: 15px;

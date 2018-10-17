@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="wrapper">
     <h1>Submits</h1>
     <div class="submits">
       <div
@@ -36,6 +36,13 @@ export default {
 </script>
 
 <style scoped>
+.wrapper {
+  width: 700px;
+  margin: 0 auto;
+  max-width: 100%;
+  margin-bottom: 15vh;
+  padding: 15px;
+}
 .submit {
   width: 600px;
   margin: 0 auto;
