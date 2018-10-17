@@ -5,8 +5,7 @@
         <h1>{{ heading }}</h1>
         <p class="preamble">{{ preamble }}</p>
         <hr>
-        <div class="content">
-          <p v-html="text"></p>
+        <div class="content" v-html="text">
         </div>
       </div>
     </div>
